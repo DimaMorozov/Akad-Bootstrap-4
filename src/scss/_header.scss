@@ -1,0 +1,153 @@
+.header {
+  background: url('../images/header-background.png') 50% no-repeat;
+  background-size: cover;
+  font-family: $primary;
+  height: 100vh;
+  color: $primary-color;
+  position: relative;
+
+  @media all and(min-width: 768px) {
+    height: auto;
+    padding-bottom: 5.125rem;
+  }
+
+  @media all and(min-width: 1200px) {
+    height: 135vh;
+    padding-bottom: 5.125rem;
+  }
+
+  @media all and(min-width: 1500px) {
+    height: 100vh;
+    padding-bottom: 5.125rem;
+  }
+
+  &__nav {
+    margin-bottom: 5rem;
+
+    @media all and (min-width: 992px) {
+      margin-bottom: 10.5rem;
+    }
+  }
+
+  &__logo {
+    color: $primary-color !important;
+
+    &:hover {
+      transform: rotateY(360deg);
+      transition: all 1s ease-in-out;
+      color: $green-color !important;
+    }
+  }
+
+  &__burger {
+    border: none;
+    width: 30px;
+    height: 30px;
+
+    @media all and(min-width: 1200px) {
+      display: none !important;
+    }
+  }
+
+  &__burger-item {
+    height: 1px;
+    background-color: $primary-color;
+
+    &--top {
+      width: 31px;
+    }
+
+    &--middle {
+      width: 15px;
+    }
+
+    &--bottom {
+      width: 23px;
+    }
+  }
+
+  &__nav-link {
+    color: $primary-color !important;
+    margin-right: 3rem;
+    font-size: 1rem;
+
+    &:hover {
+      transition: all 0.5s ease-in-out;
+      color: $green-color !important;
+    }
+  }
+
+  &__subtitle {
+    background-color: $green-color;
+    font-size: 1.5rem;
+    line-height: 2.667;
+  }
+
+  &__title {
+    border: 12px solid $primary-color;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  &__text {
+    font-family: $secondary;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+
+    @media all and (min-width: 992px) {
+      margin-bottom: 7.5rem;
+    }
+
+    br {
+      display: none;
+
+      @media all and (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
+  &__content {
+
+    &-title {
+      font-size: 1.875rem;
+      line-height: 1.6;
+      position: relative;
+      z-index: 100;
+    }
+
+    &-text {
+      font-family: $secondary;
+      font-size: 1rem;
+      line-height: 1.875;
+      z-index: 100px;
+
+      br {
+        display: none;
+
+        @media all and (min-width: 1200px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media all and (min-width: 1200px) {
+      margin-bottom: 0 !important;
+      left: 100%;
+      transform: translateY(-50%);
+      top: 42%;
+    }
+
+    @media all and(min-width: 1500px) {
+      top: 40%;
+    }
+  }
+}

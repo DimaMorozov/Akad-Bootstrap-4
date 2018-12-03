@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".grid").isotope({itemSelector:".grid__item",percentPosition:!0,masonry:{columnWidth:".grid__sizer",horizontalOrder:!0,gutter:".grid__gutter"}}),$(".portfolio__list").on("click","button",function(t){t.preventDefault();var i=$(this).attr("data-filter");$(".grid").isotope({filter:i})})});

@@ -1,0 +1,15 @@
+.form{
+
+    &__input{
+        width: 75%;
+        border: 1px solid $primary-color;
+        border-right: none;
+        text-transform: uppercase;
+        font-family: $primary;
+        color: $secondary-color;
+        font-size: 0.75rem;
+        line-height: 4;
+        text-align: left;
+        opacity: 0.5;
+    }
+}

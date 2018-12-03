@@ -1,0 +1,87 @@
+.portfolio {
+
+  &__title {
+    font-family: $primary;
+    color: $primary-color;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $secondary;
+    color: $primary-color;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.714;
+    text-align: center;
+
+    br {
+      display: none;
+
+      @media all and (min-width: 992px) {
+        display: block;
+      }
+    }
+  }
+
+  &__wrapper {
+
+    &-title {
+      font-family: $primary;
+      color: $primary-color;
+      font-size: 1.875rem;
+      font-weight: 700;
+      line-height: 1.6;
+      text-transform: uppercase;
+
+      br {
+        display: none;
+
+        @media all and (min-width: 992px) {
+          display: block;
+          text-align: left !important;
+        }
+      }
+    }
+
+    @media all and (min-width: 992px) {
+      flex-direction: row !important;
+    }
+  }
+
+  &__list {
+
+    @media all and (min-width: 992px) {
+      width: 25%;
+      align-items: flex-start !important;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    margin-bottom: .75rem;
+
+    &-text {
+      background-color: transparent;
+      text-transform: uppercase;
+      font-family: $primary;
+      color: $primary-color;
+      font-size: 0.875rem;
+
+      @media all and (min-width: 992px) {
+        margin-left: 1.5rem;
+      }
+
+      &:hover {
+        background-color: $white-color;
+        color: $green-color;
+      }
+
+      &:focus {
+        color: $green-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  font-family: $secondary;
+  color: $footer-color;
+  font-size: 0.875rem;
+  line-height: 2;
+
+  &__nav-item {
+    margin-right: 5px;
+
+    @media all and (min-width: 768px) {
+      margin-right: 10px;
+    }
+  }
+
+  &__icon {
+    width: 1.5rem;
+    margin-right: 0.6rem;
+  }
+
+  &__nav-link {
+    color: $primary-color;
+
+    @media all and (min-width: 768px) {
+      &--after:after {
+        content: "-";
+        width: 10px;
+        height: 5px;
+        margin-left: 15px;
+      }
+
+      &:hover {
+        color: $green-color;
+      }
+    }
+  }
+}

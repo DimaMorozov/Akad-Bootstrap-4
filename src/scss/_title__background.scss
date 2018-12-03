@@ -1,0 +1,16 @@
+.title__background {
+  background-color: $green-color;
+  width: 4.5rem;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  &--about {
+    width: 4rem;
+
+    @media all and (min-width: 1200px) {
+      width: 5rem;
+    }
+  }
+}
