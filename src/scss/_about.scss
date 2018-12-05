@@ -1,21 +1,5 @@
 .about {
-  padding-top: 67rem;
-
-  @media all and(min-width: 375px) {
-    padding-top: 54rem;
-  }
-
-  @media screen and (min-width: 400px) and (orientation: landscape) {
-    padding-top: 76rem;
-  }
-
-  @media all and(min-width: 768px) {
-    padding-top: 2rem;
-  }
-
-  @media all and(min-width: 1200px) {
-    padding-top: 9rem;
-  }
+   padding-top: 5rem;
 
   &__title {
     font-family: $primary;

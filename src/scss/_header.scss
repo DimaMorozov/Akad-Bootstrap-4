@@ -2,7 +2,7 @@
   background: url('../images/header-background.png') 50% no-repeat;
   background-size: cover;
   font-family: $primary;
-  height: 100vh;
+
   color: $primary-color;
   position: relative;
 
@@ -135,11 +135,10 @@
   }
 
   &__button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    margin: 0 auto;
 
-    @media all and (min-width: 1200px) {
+    /* @media all and (min-width: 1200px) {
       margin-bottom: 0 !important;
       left: 100%;
       transform: translateY(-50%);
@@ -148,6 +147,6 @@
 
     @media all and(min-width: 1500px) {
       top: 40%;
-    }
+    } */
   }
 }
